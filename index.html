@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Harsukh Singh - Resume</title>
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dce6f2);
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(31,45,61,0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #4ca1af;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* HEADER */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    max-width: 600px;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* SECTIONS */
+section {
+    width: 85%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+/* TABLE (NORMAL) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #4ca1af;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* PERSONAL DETAILS TABLE */
+.no-border td {
+    border: none;
+    padding: 6px 0;
+}
+
+/* LIST */
+ul li {
+    margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f2d3d;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-top: 20px;
+    }
+
+    section {
+        width: 95%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h3>My Resume</h3>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#extra">More</a></li>
+        <li><a href="#personal">Details</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
+<div class="header-container">
+    <div class="header-text">
+        <h1>Harsukh Singh</h1>
+        <p>Email: harsukhsingh887@gmail.com</p>
+        <p>Phone: +91-9236334424</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/harsukh-singh-4665973b3/" target="_blank" style="color:#ffd369;">Profile</a></p>
+        <p>GitHub: <a href="https://github.com/harsukhsingh887-wq" target="_blank" style="color:#ffd369;">Profile</a></p>
+    </div>
+
+    <div class="profile-img">
+        <img src="abc.jpeg" alt="Profile Photo">
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate and dedicated Computer Science student with a strong interest in full stack development, 
+artificial intelligence, and building impactful real-world solutions. I enjoy transforming ideas into 
+functional and scalable applications, whether it is through web development or problem-solving using data 
+structures and algorithms.
+
+I have actively worked on multiple projects ranging from web applications to AI-based solutions, which has 
+helped me develop a solid foundation in both frontend and backend technologies. I am particularly interested 
+in creating user-friendly interfaces while ensuring efficient performance and clean code practices.
+
+Along with technical skills, I have participated in hackathons and collaborative projects, where I gained 
+valuable experience working in teams, managing time under pressure, and thinking creatively to solve complex 
+problems. These experiences have improved my adaptability, communication skills, and ability to learn quickly.
+
+I am constantly exploring new technologies, improving my skills, and staying updated with the latest trends 
+in the tech industry. My goal is to grow as a developer and contribute to innovative projects that create 
+real value and make a meaningful impact.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <table>
+        <tr>
+            <th>Degree</th>
+            <th>Institute</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>B.Tech</td>
+            <td>NIT Jalandhar</td>
+            <td>2025 - 2029</td>
+        </tr>
+        <tr>
+            <td>12th</td>
+            <td>Swaraj India Public School</td>
+            <td>2025</td>
+        </tr>
+    </table>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Full Stack Development (MERN Stack)</li>
+        <li>App Development (Flutter / React Native)</li>
+        <li>Data Structures & Algorithms</li>
+        <li>Machine Learning & AI Basics</li>
+        <li>Database Management</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <h3>1. AI-Based Business Recommendation System</h3>
+    <p>Built a system that suggests personalized AI solutions for small businesses.</p>
+
+    <h3>2. Full Stack E-Commerce Website</h3>
+    <p>Developed a complete shopping platform with authentication, payments, and admin dashboard.</p>
+
+    <h3>3. Task Manager Web App</h3>
+    <p>Created a productivity app with real-time task updates and user management.</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Experience</h2>
+    <ul>
+        <li>Participated in multiple hackathons and built innovative solutions under time constraints.</li>
+        <li>Worked on collaborative development projects with teams.</li>
+        <li>Self-driven learning in web development and AI technologies.</li>
+    </ul>
+</section>
+
+<!-- EXTRA -->
+<section id="extra">
+    <h2>Additional Information</h2>
+
+    <h3>Achievements</h3>
+    <ul>
+        <li>Participated in national-level hackathons</li>
+        <li>Built multiple full stack projects independently</li>
+    </ul>
+
+    <h3>Languages</h3>
+    <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Punjabi</li>
+    </ul>
+
+    <h3>Hobbies</h3>
+    <ul>
+        <li>Exploring new technologies</li>
+        <li>Problem solving</li>
+        <li>Playing games</li>
+    </ul>
+</section>
+
+<!-- PERSONAL DETAILS -->
+<section id="personal">
+    <h2>Personal Details</h2>
+    <table class="no-border">
+        <tr><td><strong>DOB:</strong></td><td>12/07/2007</td></tr>
+        <tr><td><strong>Blood Group:</strong></td><td>B+</td></tr>
+        <tr><td><strong>Father’s Name:</strong></td><td>Mr. Deep Singh</td></tr>
+        <tr><td><strong>Mother’s Name:</strong></td><td>Mrs. Gurpreet Kaur</td></tr>
+        <tr><td><strong>Father’s Occupation:</strong></td><td>Business</td></tr>
+        <tr><td><strong>Address:</strong></td><td>118/411 Kaushalpuri Gumti no.5 , Kanpur</td></tr>
+        <tr><td><strong>Emergency Contact:</strong></td><td>+91-8299192398</td></tr>
+    </table>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Phone: +91-9236334424</p>
+    <p>Email: harsukhsingh887@gmail.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Harsukh Singh</p>
+</footer>
+
+</body>
+</html>
